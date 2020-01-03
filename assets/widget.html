@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test widget</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>.permanent-marker-text{font-family:'Permanent Marker',cursive}.container{max-width:1170px;margin:auto}img{max-width:100%}.inbox_people{background:#f8f8f8 none repeat scroll 0 0;float:left;overflow:hidden;width:40%;border-right:1px solid #000000}.inbox_msg{border:1px solid #000000;clear:both;overflow:hidden}.top_spac{margin:20px 0 0}.recent_heading{float:left;width:40%}.srch_bar{display:inline-block;text-align:right;width:60%;padding:}.headind_srch{padding:10px 29px 10px 20px;overflow:hidden;border-bottom:1px solid #000000}.recent_heading h4{color:#000000;font-size:21px;margin:auto}.srch_bar input{border:1px solid #000000;border-width:0 0 1px 0;width:80%;padding:2px 0 4px 6px;background:none}.srch_bar .input-group-addon button{background:rgba(0,0,0,0) none repeat scroll 0 0;border:medium none;padding:0;color:#707070;font-size:18px}.srch_bar .input-group-addon{margin:0 0 0 -27px}.chat_ib h5{font-size:15px;color:#464646;margin:0 0 8px 0}.chat_ib h5 span{font-size:13px;float:right}.chat_ib p{font-size:14px;color:#989898;margin:auto}.chat_img{float:left;width:11%}.chat_ib{float:left;padding:0 0 0 15px;width:88%}.chat_people{overflow:hidden;clear:both}.chat_list{border-bottom:1px solid #000000;margin:0;padding:18px 16px 10px}.inbox_chat{height:550px;overflow-y:scroll}.active_chat{background:#ebebeb}.incoming_msg_img{display:inline-block;width:6%}.received_msg{display:inline-block;padding:0 0 0 10px;vertical-align:top;width:92%}.received_withd_msg p{background:#ebebeb none repeat scroll 0 0;border-radius:3px;color:#646464;font-size:14px;margin:0;padding:5px 10px 5px 12px;width:100%}.time_date{color:#747474;display:block;font-size:12px;margin:8px 0 0}.received_withd_msg{width:57%}.mesgs{float:left;width:100%}.sent_msg p{background:#000000 none repeat scroll 0 0;border-radius:3px;font-size:14px;margin:0;color:#fff;padding:5px 10px 5px 12px;width:100%}.outgoing_msg{overflow:hidden;margin:26px 0 26px}.sent_msg{float:right;width:46%}.input_msg_write input{background:rgba(0,0,0,0) none repeat scroll 0 0;border:medium none;color:#4c4c4c;font-size:15px;min-height:48px;width:100%}.type_msg{border-top:1px solid #000000;position:relative}.msg_send_btn{background:#000000 none repeat scroll 0 0;border:medium none;border-radius:50%;color:#fff;cursor:pointer;font-size:17px;height:33px;position:absolute;right:21px;top:calc(50% - 16px);width:33px}.msg_history{height:516px;overflow-y:auto}*:focus{outline: none!important;}.agent-box{border-radius:50%;background-image: url(leah.png);background-size: contain;height: 30px;width: 30px;}.dev-box{border-radius:50%;background-image: url(jolo.jpg);background-size: contain;height: 130px;width: 130px;}.rdisable{pointer-events:none;opacity:0.5;}.floating-toggler{box-sizing:border-box;overflow:hidden;-webkit-filter:drop-shadow(2px 12px 7px rgba(0,0,0,.6));filter:drop-shadow(2px 12px 7px rgba(0,0,0,.6));transform:translatey(0);animation:float 3s ease-in-out infinite;margin-bottom:7px}@keyframes float{0%{-webkit-filter:drop-shadow(2px 12px 7px rgba(0,0,0,.6));filter:drop-shadow(2px 12px 7px rgba(0,0,0,.6));transform:translatey(0)}50%{-webkit-filter:drop-shadow(2px 7px 7px rgba(0,0,0,.2));filter:drop-shadow(2px 7px 7px rgba(0,0,0,.2));transform:translatey(-10px)}100%{-webkit-filter:drop-shadow(2px 12px 7px rgba(0,0,0,.6));filter:drop-shadow(2px 12px 7px rgba(0,0,0,.6));transform:translatey(0)}}</style>
+</head>
+
+<body>
+    <main class="container-fluid">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 vh-100 d-flex align-items-center">
+                    <div class="messaging my-3 w-100">
+                        <div class="inbox_msg">
+                            <div class="mesgs">
+                                <div id="msg_history" class="msg_history px-3 pt-3">
+                                    <div class="incoming_msg" style="height: 0; overflow: hidden;">
+                                        <div class="incoming_msg_img agent-box"></div>
+                                        <div class="received_msg">
+                                            <div class="received_withd_msg">
+                                                <p>Hello i'm eve. I'll be your assistant today!</p>
+                                                <span class="time_date"> 11:01 AM | jan 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="outgoing_msg" style="height: 0; overflow: hidden; margin: 0;">
+                                        <div class="sent_msg">
+                                            <p>Hi eve!</p>
+                                            <span class="time_date"> 11:03 AM | jan 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="type_msg p-3">
+                                    <div id="input_msg_write" class="input_msg_write rdisable">
+                                        <input type="hidden" id="session_wa" value="none" />
+                                        <input type="text" id="write_msg" class="write_msg" placeholder="Type a message" />
+                                        <button id="msg_send_btn" class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script>
+jQuery( document ).ready(function() {
+    setTimeout(() => {
+        var loadTime = new Date();
+        var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        jQuery( '#msg_history' ).append(`
+            <div class="incoming_msg">
+                <div class="incoming_msg_img agent-box"></div>
+                <div class="received_msg">
+                    <div class="received_withd_msg">
+                        <p>Hello i'm eve. I'll be your assistant today!</p>
+                        <span class="time_date"> ${loadTime.getHours()}:${loadTime.getMinutes()}:${loadTime.getSeconds()} | ${months[loadTime.getMonth()]} ${loadTime.getDate()}</span>
+                    </div>
+                </div>
+            </div>
+        `);
+        jQuery( '#msg_history' ).scrollTop(document.getElementById('msg_history').scrollHeight);
+        jQuery( '#input_msg_write' ).removeClass('rdisable');
+
+        jQuery( '#msg_send_btn' ).click(function() {
+            var clickTime = new Date();
+            var message = jQuery( '#write_msg' ).val();
+            jQuery( '#input_msg_write' ).addClass('rdisable');
+            jQuery( '#msg_history' ).append(`
+                <div class="outgoing_msg">
+                    <div class="sent_msg">
+                        <p>${message}</p>
+                        <span class="time_date"> ${clickTime.getHours()}:${clickTime.getMinutes()}:${clickTime.getSeconds()} | ${months[clickTime.getMonth()]} ${clickTime.getDate()}</span>
+                    </div>
+                </div>
+            `);
+            jQuery( '#msg_history' ).scrollTop(document.getElementById('msg_history').scrollHeight);
+            if(jQuery( '#session_wa' ).val() == 'none') {
+                jQuery.ajax({
+                    url: 'http://localhost:2806/api/bot/session/create',
+                    method: 'GET'
+                }).done(function(data) {
+                    var sessionResTime = new Date();
+                    if(data.flag == 'data') {
+                        jQuery( '#session_wa' ).val(data.session.session_id);
+                        jQuery.ajax({
+                            url: 'http://localhost:2806/api/conversation/create/',
+                            method: 'POST',
+                            data: {
+                                session: data.session.session_id,
+                                status: '1'
+                            }
+                        }).done(function(convodata) { /* console.log('convodata', convodata) */ });
+                        jQuery.ajax({
+                            url: 'http://localhost:2806/api/bot/message/',
+                            method: 'POST',
+                            data: {
+                                message: message,
+                                session_id: data.session.session_id
+                            }
+                        }).done(function(rdata) {
+                            jQuery.ajax({
+                                url: 'http://localhost:2806/api/dialogue/create/',
+                                method: 'POST',
+                                data: {
+                                    from: 'user',
+                                    to: data.session.session_id,
+                                    message: message,
+                                    type: 'html',
+                                    status: '1',
+                                }
+                            }).done(function(messagedata) { /* console.log('messagedata', messagedata) */ });
+                            var messageResTime = new Date();
+                            if(rdata.flag == 'data') {
+                                jQuery( '#msg_history' ).append(`
+                                <div class="incoming_msg">
+                                    <div class="incoming_msg_img agent-box"></div>
+                                    <div class="received_msg">
+                                        <div class="received_withd_msg">
+                                            <p>${rdata.data.output.generic[0].text}</p>
+                                            <span class="time_date"> ${messageResTime.getHours()}:${messageResTime.getMinutes()}:${messageResTime.getSeconds()} | ${months[messageResTime.getMonth()]} ${messageResTime.getDate()}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                `);
+                                jQuery( '#msg_history' ).scrollTop(document.getElementById('msg_history').scrollHeight);
+                                jQuery( '#write_msg' ).val('');
+                                jQuery( '#input_msg_write' ).removeClass('rdisable');
+                                jQuery.ajax({
+                                    url: 'http://localhost:2806/api/dialogue/create/',
+                                    method: 'POST',
+                                    data: {
+                                        from: 'bot',
+                                        to: data.session.session_id,
+                                        message: rdata.data.output.generic[0].text,
+                                        type: 'html',
+                                        status: '1',
+                                    }
+                                }).done(function(messagedata) { /* console.log('messagedata', messagedata) */ });
+                            } else {
+                                jQuery( '#msg_history' ).append(`
+                                <div class="incoming_msg">
+                                    <div class="incoming_msg_img agent-box"></div>
+                                    <div class="received_msg">
+                                        <div class="received_withd_msg">
+                                            <p>Oops! Something went wrong...</p>
+                                            <span class="time_date"> ${messageResTime.getHours()}:${messageResTime.getMinutes()}:${messageResTime.getSeconds()} | ${months[messageResTime.getMonth()]} ${messageResTime.getDate()}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                `);
+                                jQuery( '#msg_history' ).scrollTop(document.getElementById('msg_history').scrollHeight);
+                            }
+                        });
+                    } else {
+                        jQuery( '#msg_history' ).append(`
+                        <div class="incoming_msg">
+                            <div class="incoming_msg_img agent-box"></div>
+                            <div class="received_msg">
+                                <div class="received_withd_msg">
+                                    <p>Oops! Something went wrong...</p>
+                                    <span class="time_date"> ${sessionResTime.getHours()}:${sessionResTime.getMinutes()}:${sessionResTime.getSeconds()} | ${months[sessionResTime.getMonth()]} ${sessionResTime.getDate()}</span>
+                                </div>
+                            </div>
+                        </div>
+                        `);
+                        jQuery( '#msg_history' ).scrollTop(document.getElementById('msg_history').scrollHeight);
+                    }
+                });
+            } else {
+                var session_id = jQuery( '#session_wa' ).val();
+                jQuery.ajax({
+                    url: 'http://localhost:2806/api/dialogue/create/',
+                    method: 'POST',
+                    data: {
+                        from: 'user',
+                        to: session_id,
+                        message: message,
+                        type: 'html',
+                        status: '1',
+                    }
+                }).done(function(messagedata) { /* console.log('messagedata', messagedata) */ });
+                jQuery.ajax({
+                    url: 'http://localhost:2806/api/bot/message/',
+                    method: 'POST',
+                    data: {
+                        message: message,
+                        session_id: session_id
+                    }
+                }).done(function(rdata) {
+                    var messageResTime = new Date();
+                    if(rdata.flag == 'data') {
+                        jQuery( '#msg_history' ).append(`
+                        <div class="incoming_msg">
+                            <div class="incoming_msg_img agent-box"></div>
+                            <div class="received_msg">
+                                <div class="received_withd_msg">
+                                    <p>${rdata.data.output.generic[0].text}</p>
+                                    <span class="time_date"> ${messageResTime.getHours()}:${messageResTime.getMinutes()}:${messageResTime.getSeconds()} | ${months[messageResTime.getMonth()]} ${messageResTime.getDate()}</span>
+                                </div>
+                            </div>
+                        </div>
+                        `);
+                        jQuery( '#msg_history' ).scrollTop(document.getElementById('msg_history').scrollHeight);
+                        jQuery( '#write_msg' ).val('');
+                        jQuery( '#input_msg_write' ).removeClass('rdisable');
+                        jQuery.ajax({
+                            url: 'http://localhost:2806/api/dialogue/create/',
+                            method: 'POST',
+                            data: {
+                                from: 'bot',
+                                to: session_id,
+                                message: rdata.data.output.generic[0].text,
+                                type: 'html',
+                                status: '1',
+                            }
+                        }).done(function(messagedata) { /* console.log('messagedata', messagedata) */ });
+                    } else {
+                        jQuery( '#msg_history' ).append(`
+                        <div class="incoming_msg">
+                            <div class="incoming_msg_img agent-box"></div>
+                            <div class="received_msg">
+                                <div class="received_withd_msg">
+                                    <p>Oops! Something went wrong...</p>
+                                    <span class="time_date"> ${messageResTime.getHours()}:${messageResTime.getMinutes()}:${messageResTime.getSeconds()} | ${months[messageResTime.getMonth()]} ${messageResTime.getDate()}</span>
+                                </div>
+                            </div>
+                        </div>
+                        `);
+                        jQuery( '#msg_history' ).scrollTop(document.getElementById('msg_history').scrollHeight);
+                    }
+                });
+            }
+            
+        })
+    }, 3000);
+});
+</script>
+</body>
+
+</html>
